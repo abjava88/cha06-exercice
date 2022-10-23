@@ -1,0 +1,34 @@
+### Get All TODOS
+GET http://localhost:5000/
+
+
+### Post One TODO
+
+POST http://localhost:5000/save
+Content-Type: application/json
+
+
+{
+    "text": "Call doctor"
+}
+
+
+### Update One TODO
+
+PATCH http://localhost:5000/update
+Content-Type: application/json
+
+
+{
+    "_id":"63555aff647cc0a8acf02451",
+    "text":"Call friends"
+}
+
+### Delete One TODO
+
+DELETE http://localhost:5000/delete
+Content-Type: application/json
+
+{
+    "_id":"63555aff647cc0a8acf02451"
+}
