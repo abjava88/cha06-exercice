@@ -38,19 +38,20 @@ input{
 }
 
 .add{
-  background-color: #000;
+  background-color: rgb(13, 69, 153);
   color: #fff;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
+  border-radius: 6px;
 }
 
 .todo{
   position: relative;
   margin-top: 1rem;
-  background-color: #000;
+  background-color: rgb(13, 69, 153);
   color: #fff;
   padding: 1.5rem 3rem;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .icons{

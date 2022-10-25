@@ -10,6 +10,6 @@ router.post("/save", saveToDo);
 
 router.patch("/update", updateToDo);
 
-router.delete("/delete", deleteToDo);
+router.post("/delete", deleteToDo);
 
 module.exports = router;

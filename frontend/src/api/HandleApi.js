@@ -1,5 +1,5 @@
 import axios from 'axios'
-const backendUrl = "localhots:5000"
+const backendUrl = "http://localhost:5000"
 const save_url = backendUrl + "/save"
 const update_url = backendUrl + "/update"
 const delete_url = backendUrl + "/delete"
@@ -43,7 +43,7 @@ const updateToDo = (toDoId, text, setToDo, setText, setIsUpdating) => {
 const deleteToDo = (_id, setToDo) => {
 
     axios
-        .delete(delete_url, { _id })
+        .post(delete_url, { _id })
         .then((data) => {
             console.log(data)
             getAllToDo(setToDo)
